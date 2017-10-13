@@ -7,7 +7,7 @@ public class Exercise1 {
 		// Ajoutez les champs name et age à la classe Person.
 		// Créez un constructeur public permettant d'initialiser ces valeurs au moment de la construction.
 		// Créez des getters publics pour lire ces valeurs une fois la classe construite.
-		return null;
+		return new Person(age,name);
 	}
 
 	public static void main(String[] args) {
@@ -15,9 +15,10 @@ public class Exercise1 {
 		// et un second donnant l'âge (nombre entier), créez un objet Person sur base de ceux-ci.
 		String nom=new String();
 		nom="Jérémy";
-		int age=20;
-		Person moi=new Person(age,nom);
+		int age=10;
+		Person moi=createPerson(nom,age);
+
 		// Ecrivez ensuite le nom et l'âge de cette personne sur la sortie standard.
-		System.out.println("Je m'apelle "+moi.getName()+" et ai "+moi.getAge()+" ans.");
+		System.out.println("Je m'apelle "+moi.getName()+" et j'ai "+moi.getAge()+" ans.");
 	}
 }
